@@ -6,7 +6,21 @@
     <title>Document</title>
 </head>
 <style>
-
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: animate;
+        animation-duration: 2S;
+        animation-iteration-count: infinite;
+    }
+    @keyframes animate {
+        0%   {color: blue; transform: scale(1); }
+        50%  { color: rgb(17, 255, 0); }
+        100% {color: rgb(255, 85, 0); }
+    }
+    
+    .error {color: red;}
     body{
         display: flex;
         align-items: center;
@@ -26,10 +40,12 @@
     label{
         margin-bottom: 3px;
         display: block;
+       
     }
     input[type="text"],input[type="email"],textarea {
         width: 96%;
         color: blue;
+       
     }
     button[type="submit"]{
         color: aliceblue;
@@ -44,19 +60,28 @@
         background-color: blueviolet;
 
     }
+    .container{
+        background-color: rgba(201, 227, 142, 0.639);
+        text-align: left;
+        padding: 8px;
+        border-radius: 13px;
+    }
 
 </style>
 <body>
-    <form action="" id="form">
-        <h1>Login</h1>
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required>
-        <label for="massage">Massage</label>
-        <textarea name="massage" id="massage" cols="20" rows="10"></textarea>
-        <button type="submit">Submit</button>
-    </form>
+    <div class="container ">
+        <form action="" id="form">
+            <h1>Login</h1>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required>
+            <label for="massage">Massage</label>
+            <textarea name="massage" id="massage" cols="20" rows="10"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
 </body>
 </html>
