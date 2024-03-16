@@ -22,7 +22,21 @@
 /* text css above hero image*/
 .hero_title{
     font-size: 4.5rem;
+   font-size: 4.5rem;
+    animation-name: bounce;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-shadow: 1px 2px 3px black;
 }
+    
+@keyframes bounce {
+            0%   {color:red; }
+  25%  {color:yellow; }
+  50%  {color:blue; }
+  75%  {color:green; }
+  100% {color:red; }
+  
+        }
 .hero_desc {
     font-size: 2rem;
 }
