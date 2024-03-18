@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #heading{
+        color: rgb(37, 49, 49);
+        font-size: 25px;
+        font-weight: bold;
+    }
+    #newuser{
+       width:300px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: auto;
+        flex-direction: column;
+        border-radius: 20px;
+        border: 2px solid rgb(37, 49, 49);   
+        box-shadow: 1px 2px 10px rgb(37, 49, 49);
+    }
+    #name,#surname,#email{
+        color: #ff8f00;
+        text-transform: capitalize;
+        width: 90%;
+        height: 40px;
+        font-size: 16px;
+        text-align: left;
+        background-color: transparent;
+        outline: none;
+        border-radius: 20px;
+        border: 2px solid  rgb(37, 49, 49);
+        margin: 5px 0;
+        box-shadow: 1px 2px 10px rgb(37, 49, 49);
+    }
+    #btn{
+        font-size: 16px;
+        width: 90%;
+        height: 40px;
+        background-color:rgb(37, 49, 49);
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 20px;
+        margin: 5px 0;
+        cursor: pointer;
+    }
+    #btn:hover{
+        box-shadow: 2px 3px 4px rgb(94, 92, 92);
+    }
+</style>
+<body> 
+        <div class="form" id="newuser">
+            <p id="heading">New User</p>
+            <input type="text" class="name" id="name" placeholder="Name :"> <br>
+            <input type="text" class="surname" id="surname" placeholder ="Surname:"><br>
+            <input type="email" class="email" id="email" placeholder ="Email :"><br>
+            <input type="number" class="email" id="email" placeholder ="Mobile:+91"  ><br>
+            <button type="submit" id="btn">Add User</button> 
+        </div>
+</body>
+</html>
